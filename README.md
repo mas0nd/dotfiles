@@ -13,6 +13,6 @@ $ ./setup
 
 ## Todo
 - [ ] Add prerequisites
-- [ ] Create symlink script
+- [X] Create symlink script
 - [ ] Add all dotfiles
 - [ ] Finish customizing dotfiles
