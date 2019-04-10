@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES=(".Xresources", ".vimrc", ".vim/configs/binds.vim", ".vim/configs/color.vim", ".vim/configs/plugins.vim", ".vim/configs/settings.vim")
+FILES=(".Xresources", ".vimrc", ".vim/configs/binds.vim", ".vim/configs/color.vim", ".vim/configs/plugins.vim", ".vim/configs/settings.vim", '.tmux.conf')
 DIRS=(".vim/configs")
 
 echo ' ___    __  ____  ___  __  __    ___  ___ '
