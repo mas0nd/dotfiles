@@ -1,5 +1,7 @@
 # Mason's dotfiles
 
+## Prerequisites
+
 ## Install Instructions
 
 Clone this repo and run the setup script. This will create a symlink for each of the dotfiles.
