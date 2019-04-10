@@ -12,7 +12,8 @@ $ ./setup
 ```
 
 ## Todo
-[ ] Add prerequisites
-[ ] Create symlink script
-[ ] Add all dotfiles
-[ ] Finish customizing dotfiles
+[  ] Add prerequisites
+[  ] Create symlink script
+[  ] Add all dotfiles
+[  ] Finish customizing dotfiles
+[x] Test
