@@ -5,7 +5,6 @@
 # |_.__/ \__,_|___/_| |_|____| .__/|_|  \___/|_| |_|_|\___|
 #                      |_____|_|                           
 
-
 # .bash_profile - Base
 
 # Get the aliases and functions
