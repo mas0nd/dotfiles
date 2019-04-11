@@ -8,7 +8,7 @@ Clone this repo and run the setup script. This will create a symlink for each of
 ```
 $ git clone https://github.com/Mason-D/dotfiles.git
 $ cd dotfiles
-$ ./setup
+$ ./setup.sh
 ```
 
 ## Todo
