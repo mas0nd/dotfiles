@@ -1,25 +1,12 @@
-! __  __                                            
-! \ \/ /_ __ ___  ___  ___  _   _ _ __ ___ ___  ___ 
+! __  __
+! \ \/ /_ __ ___  ___  ___  _   _ _ __ ___ ___  ___
 !  \  /| '__/ _ \/ __|/ _ \| | | | '__/ __/ _ \/ __|
 !  /  \| | |  __/\__ \ (_) | |_| | | | (_|  __/\__ \
 ! /_/\_\_|  \___||___/\___/ \__,_|_|  \___\___||___/
-                                                  
-!! st settings
-! Terminal Name
-st.termname: st-256color
 
-! Shell
-st.shell: /bin/zsh
-
-! Font
-st.font: Hack Nerd Font:size=12
-
-! Coloring
-st.background: black
-st.foreground: white
-
-! Transparency (0-255):
-st.alpha: 180
+!!!!!!!!!!!!!!
+!! Coloring !!
+!!!!!!!!!!!!!!
 
 ! Dracula Xresources palette
 *.foreground: #F8F8F2
@@ -40,3 +27,24 @@ st.alpha: 180
 *.color14:    #9AEDFE
 *.color7:     #BFBFBF
 *.color15:    #E6E6E6
+
+!!!!!!!!!!!!!!!!!
+!! st settings !!
+!!!!!!!!!!!!!!!!!
+
+! Terminal Name
+st.termname: st-256color
+
+! Shell
+st.shell: /bin/zsh
+
+! Font
+st.font: Hack Nerd Font:size=12
+
+! Coloring
+st.background: black
+st.foreground: white
+
+! Transparency (0-255):
+st.alpha: 180
+rofi.show-icons: false

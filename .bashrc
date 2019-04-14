@@ -68,3 +68,7 @@ fi
 if command -v tmux>/dev/null; then
   [[  $TERM =~ xterm ]] && [ -z $TMUX ] && exec tmux
 fi
+
+if [ -x "$(command -v setxkbmap)" ]; then
+  setxkbmap -option "caps:swapescape"
+fi
