@@ -8,7 +8,7 @@
 # .zprofile - Base
 
 # Load Xresources
-[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+[[ -f ~/.Xresources ]] && command -v xrdb && xrdb -merge -I$HOME ~/.Xresources
 
 # Source .zshrc always
 if [ -f ~/.zshrc ]; then
