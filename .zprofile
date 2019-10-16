@@ -1,21 +1,4 @@
-#                       __ _ _      
-#  _____ __  _ __ ___  / _(_) | ___ 
-# |_  / '_ \| '__/ _ \| |_| | |/ _ \
-#  / /| |_) | | | (_) |  _| | |  __/
-# /___| .__/|_|  \___/|_| |_|_|\___|
-#     |_|                           
+#!/usr/bin/env zsh
 
-# .zprofile - Base
-
-# Load Xresources
-[[ -f ~/.Xresources ]] && command -v xrdb && xrdb -merge -I$HOME ~/.Xresources
-
-# Source .zshrc always
-if [ -f ~/.zshrc ]; then
-    . ~/.zshrc
-fi
-
-# User specific environment and startup programs
-PATH=$PATH:$HOME/.local/bin:$HOME/bin
-
-export PATH
+[ -f "$HOME/.profile" ] && source "$HOME/.profile"
+[ -f "$HOME/.zshrc" ] && source "$HOME/.zshrc"

@@ -1,10 +1,6 @@
-#  _               _              
-# | |__   __ _ ___| |__  _ __ ___ 
-# | '_ \ / _` / __| '_ \| '__/ __|
-# | |_) | (_| \__ \ | | | | | (__ 
-# |_.__/ \__,_|___/_| |_|_|  \___|
+#!/usr/bin/env bash
 
-# .bashrc - Base
+[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 extract () {
      if [ -f $1 ] ; then
@@ -38,28 +34,6 @@ egrep '^ *[0-9.]*G' /tmp/list
 rm -rf /tmp/list
 }
 
-# Common Shortcuts
-alias q=exit
-alias h=history
-alias lsa='ls -a'
-alias lsl='ls -l'
-alias lsla='ls -la'
-alias ..='cd ..'
-alias ...='cd ..; cd ..'
-alias ....='cd ..; cd ..; cd ..'
-alias svim="sudo vim"
-
-# Config Shortcuts
-alias vbash="vim  ~/.bashrc"
-alias vvim="vim ~/.vimrc"
-alias vmux="vim ~/.tmux.conf"
-
-# Let there be color in grep!
-alias grep="grep --color=auto"
-
-# Set Vim as my default editor
-export EDITOR="vim"
-
 if [ -e ~/.locals ]; then
 	source ~/.locals
 fi
@@ -67,8 +41,4 @@ fi
 # Launch tmux by default in xterm
 if command -v tmux>/dev/null; then
   [[  $TERM =~ xterm ]] && [ -z $TMUX ] && exec tmux
-fi
-
-if [ -x "$(command -v setxkbmap)" ]; then
-  setxkbmap -option "caps:swapescape"
 fi

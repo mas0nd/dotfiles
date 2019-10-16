@@ -1,17 +1,12 @@
-#          _              
-#  _______| |__  _ __ ___ 
-# |_  / __| '_ \| '__/ __|
-#  / /\__ \ | | | | | (__ 
-# /___|___/_| |_|_|  \___|
+#!/usr/bin/env zsh
 
-# .zshrc - Base
+[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+
+unsetopt AUTO_CD
 
 export ZSH="$HOME/.oh-my-zsh"
-
 ZSH_THEME="dracula"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+source $ZSH/oh-my-zsh.sh
 
 COMPLETION_WAITING_DOTS="true"
 
@@ -19,13 +14,3 @@ plugins=(
   git
 )
 
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-source $HOME/.bashrc
-
-alias vzsh="vim ~/.zshrc"
-
-# ls Colors
-LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
-unsetopt AUTO_CD
