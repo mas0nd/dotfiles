@@ -16,8 +16,7 @@ export LESS_TERMCAP_us="$(printf '%b' '[1;32m')"; a="${a%_}"
 export LESS_TERMCAP_ue="$(printf '%b' '[0m')"; a="${a%_}"
 
 # Local configuration
-[ -f "$HOME/.localrc" ] && source "$HOME/.localrc"
+[ -f "$HOME/.config/localrc" ] && source "$HOME/.config/localrc"
 
-if command -v setxkbmap>/dev/null; then
-  setxkbmap -option "caps:swapescape"
-fi
+# Aliases
+[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"

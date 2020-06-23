@@ -1,7 +1,5 @@
 #!/usr/bin/env zsh
 
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
-
 unsetopt AUTO_CD
 
 export ZSH="$HOME/.oh-my-zsh"

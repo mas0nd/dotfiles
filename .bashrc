@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
-
 extract () {
      if [ -f $1 ] ; then
          case $1 in
@@ -33,10 +31,6 @@ egrep '^ *[0-9.]*M' /tmp/list
 egrep '^ *[0-9.]*G' /tmp/list
 rm -rf /tmp/list
 }
-
-if [ -e ~/.locals ]; then
-	source ~/.locals
-fi
 
 # Launch tmux by default in xterm
 if command -v tmux>/dev/null; then

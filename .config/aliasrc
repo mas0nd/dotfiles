@@ -7,8 +7,6 @@ alias ....='cd ..; cd ..; cd ..'
 alias ls="ls -hN --color=auto --group-directories-first"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
-alias ccat="highlight --out-format=ansi"
-alias lsp="pacman -Qe --color=always"
 
 # General
 alias q=exit
@@ -18,9 +16,6 @@ alias rbn="sudo reboot -h now"
 alias g="git"
 alias f="$FILE"
 alias e="$EDITOR"
-
-# Quickly edit configs
-alias ei3="e $HOME/.config/i3/config"
 
 # nvim -> vim
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"

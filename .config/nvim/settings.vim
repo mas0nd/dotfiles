@@ -18,6 +18,7 @@ set encoding=utf-8
 set sw=4
 set sts=4
 set ts=4
+set expandtab
 
 " - Filetype Settings
 autocmd Filetype c setlocal sw=2 sts=2 ts=2 expandtab
