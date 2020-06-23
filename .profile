@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 export EDITOR="nvim"
 export TERMINAL="st"
 export BROWSER="firefox"
@@ -15,8 +14,8 @@ export LESS_TERMCAP_se="$(printf '%b' '[0m')"; a="${a%_}"
 export LESS_TERMCAP_us="$(printf '%b' '[1;32m')"; a="${a%_}"
 export LESS_TERMCAP_ue="$(printf '%b' '[0m')"; a="${a%_}"
 
-# Local configuration
-[ -f "$HOME/.config/localrc" ] && source "$HOME/.config/localrc"
-
 # Aliases
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+
+# Local configuration
+[ -f "$HOME/.config/localrc" ] && source "$HOME/.config/localrc"
