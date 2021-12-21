@@ -6,7 +6,6 @@ alias ....='cd ..; cd ..; cd ..'
 # Colors
 alias ls="ls -hN --color=auto --group-directories-first"
 alias grep="grep --color=auto"
-alias diff="diff --color=auto"
 
 # General
 alias q=exit
@@ -19,3 +18,8 @@ alias e="$EDITOR"
 
 # nvim -> vim
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+
+# Opengrok
+opengrok() {
+    docker run -d -v $1:/opengrok/src -p 8088:8080 opengrok/docker:latest
+}

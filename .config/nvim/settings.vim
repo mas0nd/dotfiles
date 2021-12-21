@@ -24,3 +24,5 @@ set expandtab
 autocmd Filetype c setlocal sw=2 sts=2 ts=2 expandtab
 autocmd Filetype python setlocal sw=4 sts=4 ts=4 expandtab
 autocmd Filetype java setlocal sw=4 sts=4 expandtab
+autocmd Filetype markdown setlocal spell
+autocmd Filetype terraform setlocal sw=2 sts=2 ts=2 expandtab
