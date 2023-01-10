@@ -26,9 +26,6 @@ call plug#begin()
     " File Type Icons
     Plug 'ryanoasis/vim-devicons'
 
-    " Color Previews
-    Plug 'gko/vim-coloresque'
-
     " Airline Status Bar
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -44,6 +41,9 @@ call plug#begin()
 
     " Surround
     Plug 'tpope/vim-surround'
+
+    " Terraform
+    Plug 'hashivim/vim-terraform'
 call plug#end()
 
 " Sync Plugins
