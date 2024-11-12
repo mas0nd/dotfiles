@@ -23,3 +23,9 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 opengrok() {
     docker run -d -v $1:/opengrok/src -p 8088:8080 opengrok/docker:latest
 }
+
+# CSV2JSON
+alias csv2json="python -c 'import csv, json, sys; print(json.dumps([dict(r) for r in csv.DictReader(sys.stdin)]))'"
+
+# BBot
+alias bbot='docker run --rm -it -v "$HOME/.bbot:/root/.bbot" -v "$HOME/.config/bbot:/root/.config/bbot" blacklanternsecurity/bbot:stable "$@"'
