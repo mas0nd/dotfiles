@@ -4,7 +4,7 @@ alias ...='cd ..; cd ..'
 alias ....='cd ..; cd ..; cd ..'
 
 # Colors
-alias ls="ls -hN --color=auto --group-directories-first"
+alias ls="ls -hG"
 alias grep="grep --color=auto"
 
 # General
@@ -15,12 +15,17 @@ alias rbn="sudo reboot -h now"
 alias g="git"
 alias f="$FILE"
 alias e="$EDITOR"
+alias resource="source $HOME/.profile"
 
 # nvim -> vim
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 
 # Opengrok
 opengrok() {
+    set -x
+    if [ -z "$1" ]; then
+        $1=`pwd`
+    fi
     docker run -d -v $1:/opengrok/src -p 8088:8080 opengrok/docker:latest
 }
 
